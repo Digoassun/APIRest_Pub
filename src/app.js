@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import autorizacao from "./middleware/valida-header.js";
+// import autorizacao from "./middleware/valida-header.js";
 import {
   TransactionsController,
   SuppliersController,
@@ -14,7 +14,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-autorizacao.auth(app);
+// autorizacao.auth(app);
 
 StaffController.routes(app);
 TransactionsController.routes(app);
