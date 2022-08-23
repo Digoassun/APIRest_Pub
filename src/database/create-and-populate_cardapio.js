@@ -21,9 +21,18 @@ class MenuDb {
     static ADD_MENU_DATA = `
     INSERT INTO MENU (produto,valor,descricao)
     VALUES 
-        ('Caipirinha', 10.50, 'Drink de limão com cachaça 51 e açucar'),
-        ('Calabresa acebolada', 25.00,'Uma porçao de 400 gramas de calabresa com cebola frita'),
-        ('Skol', 5.00,'Pilsen, 350ml')
+        ('caipirinha', 10.50, 'Drink de limão com cachaça 51 e açucar'),
+        ('gin & tônica', 20.50, 'Seagers com gelo, limão e água tônica'),
+        ('brahma', 8.00,'Pilsen, 600ml'),
+        ('skol', 8.00,'Pilsen, 600ml'),
+        ('heineken', 10.00,'Pilsen, 600ml'),
+        ('original', 10.00,'Pilsen, 600ml'),        
+        ('eisenbahn', 11.00,'Pilsen, 600ml'),
+        ('batata frita', 20.00,'Uma porçao de 500 gramas de batata frita'),
+        ('calabresa acebolada', 25.00,'Uma porçao de 400 gramas de calabresa com cebola frita'),
+        ('frango a passarinho', 35.00,'Uma porçao de 500 gramas de frango com alho frito'),
+        ('coca-Cola', 5.00,'Lata 350ml'),
+        ('água sem gás', 3.00,'Água mineral')
     `;
     static criaTabelaMenu = () => {
         db.run(this.MENU_SCHEMA, (e) => {
