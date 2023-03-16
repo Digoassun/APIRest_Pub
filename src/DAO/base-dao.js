@@ -47,6 +47,28 @@ class DAO {
       });
     });
   }
+  
+  static dataPickOneAlternative(comparador) {
+    return new Promise((resolve, reject) => {
+      DB.get(this.querySelectLogin, comparador, (erro, linhas) => {
+        if (erro) {
+          reject(new ErrosModel("Erro desconhecido", 500, erro));
+        } else if (Validacoes.isEmpty(linhas)) {
+          reject(new ErrosModel("Dados não encontrados", 404));
+        } else {
+          resolve({
+            resultado: {
+              msg: {
+                msg: "Aqui estão seus dados",
+                dados: linhas,
+              },
+            },
+            status: 200,
+          });
+        }
+      });
+    });
+  }
 
   static insertData(dados) {
     return new Promise((resolve, reject) => {

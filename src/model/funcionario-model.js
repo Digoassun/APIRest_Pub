@@ -4,8 +4,8 @@ import ErrosModel from "./errors-model.js"
 class StaffModel {
     constructor(dados) {
         this.nome = dados.nome
-        this.cpf = dados.cpf
-        this.datadenascimento = new Date(dados.datadenascimento).toString().substring(4, 15)
+        this.login = dados.login
+        this.senha = dados.senha
     }
 
     static validateModel(dados) {
@@ -13,9 +13,7 @@ class StaffModel {
             try {
                 if (
                     Validacoes.isString(dados.nome) &&
-                    Validacoes.isString(dados.cpf) &&
-                    Validacoes.isCpf(dados.cpf) &&
-                    Validacoes.isString(dados.datadenascimento)) {
+                    Validacoes.isString(dados.login)) {
                     const newModel = new StaffModel(dados)
                     await Validacoes.reqIsEmpty(newModel)
                     resolve(newModel)

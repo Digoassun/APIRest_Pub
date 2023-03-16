@@ -22,6 +22,15 @@ class StaffControllers {
             }
         });
 
+        app.get("/staff/login/:login", async (req, res) => {
+            try {
+                const resposta = await StaffDAO.dataPickOneAlternative(req.params.login)
+                res.status(resposta.status).json(resposta.resultado.msg)
+            } catch (error) {
+                res.status(error.status).json(error.msg);
+            }
+        });
+
         app.post("/staff", async (req, res) => {
             try {
                 const dados = await StaffModel.validateModel(req.body);

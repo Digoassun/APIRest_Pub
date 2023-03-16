@@ -15,15 +15,13 @@ class StaffDb {
     CREATE TABLE IF NOT EXISTS "STAFF" (
     "id" INTEGER PRIMARY KEY AUTOINCREMENT,
     "nome" varchar(64),
-    "cpf" varchar(64),
-    "datadenascimento" date
+    "login" varchar(64),
+    "senha" varchar(64)
     );`;
   static ADD_STAFF_DATA = `
-    INSERT INTO STAFF (nome, cpf, datadenascimento)
+    INSERT INTO STAFF (nome, login, senha)
     VALUES 
-        ('Leovegildo Moura', '23912345014', 'Oct 04 2000'),
-        ('Neolasco Comodoro', '54919259395', 'Sep 23 1992'),
-        ('Digo Assun', '12821393493', 'May 11 1985')
+        ('MASTER', 'gestora', 'Gestora@123')
     `;
 
   static criaTabelaStaff() {
