@@ -6,6 +6,7 @@ class MenuModel {
         this.produto = requisicao.produto;
         this.valor = requisicao.valor;
         this.descricao = requisicao.descricao;
+        this.img = requisicao.img;
     }
 
     static validateModel(dados) {
@@ -13,6 +14,7 @@ class MenuModel {
             try {
                 if (Validacoes.isNumber(dados.valor) &&
                     Validacoes.isString(dados.produto) &&
+                    Validacoes.isString(dados.img) &&
                     Validacoes.isString(dados.descricao)) {
                     const newModel = new MenuModel(dados)
                     await Validacoes.reqIsEmpty(newModel)
