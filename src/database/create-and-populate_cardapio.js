@@ -30,8 +30,8 @@ class MenuDb {
         ('original', 10.00,'Pilsen, 600ml', 'https://user-images.githubusercontent.com/102765815/187473622-468b8f5d-71f8-47d1-8736-f373dd5d3a66.png'),
         ('eisenbahn', 11.00,'Pilsen, 600ml', 'https://user-images.githubusercontent.com/102765815/187473624-08c0d3f4-165a-42bc-82ce-e37957f04ddf.png'),
         ('batata frita', 20.00,'Uma porçao de 500 gramas de batata frita', 'https://user-images.githubusercontent.com/102765815/187473626-80597463-de4a-4ec1-8cd2-0fc2b79c0c3d.png'),
-        ('calabresa acebolada', 25.00,'Uma porçao de 400 gramas de calabresa com cebola frita', 'https://user-images.githubusercontent.com/102765815/187473629-5dab1b1c-6561-449a-a450-7e6cec2ad3bd.png'),
-        ('frango a passarinho', 35.00,'Uma porçao de 500 gramas de frango com alho frito', 'https://user-images.githubusercontent.com/102765815/187473632-270f7eba-1ce6-4c61-bcee-a4818083d37a.png'),
+        ('calabresa acebolada', 25.00,'Uma porçao de 400 gramas de calabresa com cebola frita', 'https://user-images.githubusercontent.com/102765815/187473632-270f7eba-1ce6-4c61-bcee-a4818083d37a.png'),
+        ('frango a passarinho', 35.00,'Uma porçao de 500 gramas de frango com alho frito', 'https://user-images.githubusercontent.com/102765815/187473629-5dab1b1c-6561-449a-a450-7e6cec2ad3bd.png'),
         ('coca-Cola', 5.00,'Lata 350ml', 'https://user-images.githubusercontent.com/102765815/187473633-c83ccda7-3102-46fa-abd9-d138acd27c80.png'),
         ('água sem gás', 3.00,'Água mineral', 'https://user-images.githubusercontent.com/102765815/187473636-e2171a30-478c-457a-a27f-0f63199f9904.png')
     `;
