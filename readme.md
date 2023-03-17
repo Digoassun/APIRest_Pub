@@ -1,3 +1,6 @@
+# ---API UTILIZADA EXCLUSIVAMENTE PARA O PROJETO OWLS BAR---
+# LINK CORRETO DA API --> https://github.com/lelaranja/APIRest_Pub
+
 # 🍻 API REST - PUB
 
 Projeto educacional de finalização do Módulo IV do curso de Web Dev Full Stack da [Resilia Educação](https://www.resilia.com.br/).
